@@ -1,0 +1,2964 @@
+adb server is out of date.  killing...
+* daemon started successfully *
+--------- beginning of system
+I/auditd  ( 1899): Starting up
+I/audit_log( 1899): Previous audit logfile detected, rotating
+E/audit_rules( 1899): Could not read audit rules /data/misc/audit/audit.rules: No such file or directory
+--------- beginning of main
+I/installd( 1908): installd firing up
+E/sdcard  ( 1916): missing packages.list; retrying
+I/cm      ( 1922): ____ _   _ ____ _  _ ____ ____ ____ _  _ _  _ ____ ___ 
+I/cm      ( 1923): |     \_/  |__| |\ | |  | | __ |___ |\ | |\/| |  | |  \ 
+I/        ( 1901): debuggerd: Dec 28 2014 20:36:53
+I/cm      ( 1926): |___   |   |  | | \| |__| |__] |___ | \| |  | |__| |__/ 
+I/cm      ( 1933): Welcome to Android 5.0.2 / CyanogenMod-12-20150126-UNOFFICIAL-i9308 
+I/lowmemorykiller( 1893): Using in-kernel low memory killer interface
+E/DirectVolume( 1895): Vold managed volumes must have auto mount point; ignoring /storage/sdcard1
+E/DirectVolume( 1895): Vold managed volumes must have auto mount point; ignoring /storage/usbdisk0
+I/Vold    ( 1895): Vold 2.1 (the revenge) firing up
+D/Vold    ( 1895): Volume sdcard1 state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    ( 1895): Volume usbdisk0 state changing -1 (Initializing) -> 0 (No-Media)
+I/Cryptfs ( 1895): Check if PFE is activated on Boot
+I/Netd    ( 1900): Netd 1.0 starting
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 1900): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+I/macloader( 1910): Writing semcosh to /data/.cid.info
+D/macloader( 1910): Setting permissions on /data/.cid.info
+E/Cryptfs ( 1895): Bad magic for real block device /dev/block/mmcblk0p12
+E/Cryptfs ( 1895): Error getting crypt footer and key
+W/linker  ( 1905): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 1905): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 1905 (rild)
+I/SurfaceFlinger( 1896): SurfaceFlinger is starting
+D/SurfaceFlinger( 1896): >>> Run service
+D/SecTVOutService( 1896): SecTVOutService instantiate
+I/libfimc ( 1896): bool SecFimc::create(SecFimc::FIMC_DEV, fimc_overlay_mode, unsigned int):: Fimc reserved memory =0xffffffea
+D/SecTVOutService( 1896): virtual void android::SecTVOutService::setHdmiStatus(uint32_t) HDMI cable status = 1
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 1905, tid: 1905, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bee8a1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/mediaserver( 1907): ServiceManager: 0x40f500c0
+I/AudioFlinger( 1907): Using default 3000 mSec as standby time.
+I/ServiceManager( 1907): Waiting for service batterystats...
+D/        ( 1896): bool android::SecHdmi::connect()::m_flagHWConnected() fail 
+E/SecTVOutService( 1896): virtual void android::SecTVOutService::setHdmiStatus(uint32_t)::mSecHdmi.connect() fail
+E/SELinux ( 1894): avc:  denied  { add } for service=SecTVOutService scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager
+D/SecTVOutService( 1896): SecTVOutService r=0
+I/SurfaceFlinger( 1896): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/AndroidRuntime( 1915): 
+D/AndroidRuntime( 1915): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/libEGL  ( 1896): loaded /system/lib/egl/libEGL_mali.so
+D/AndroidRuntime( 1915): CheckJNI is OFF
+D/libEGL  ( 1896): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 1896): loaded /system/lib/egl/libGLESv2_mali.so
+I/art     ( 1915): option[0]=-Xzygote
+I/art     ( 1915): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 1915): option[2]=exit
+I/art     ( 1915): option[3]=vfprintf
+I/art     ( 1915): option[4]=sensitiveThread
+I/art     ( 1915): option[5]=-verbose:gc
+I/art     ( 1915): option[6]=-Xms8m
+I/art     ( 1915): option[7]=-Xmx256m
+I/art     ( 1915): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 1915): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 1915): option[10]=-XX:HeapMinFree=2m
+I/art     ( 1915): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 1915): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 1915): option[13]=-Xgenregmap
+I/art     ( 1915): option[14]=-Xgc:precise
+I/art     ( 1915): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 1915): option[16]=-Xlockprofthreshold:500
+I/art     ( 1915): option[17]=-Ximage-compiler-option
+I/art     ( 1915): option[18]=--runtime-arg
+I/art     ( 1915): option[19]=-Ximage-compiler-option
+I/art     ( 1915): option[20]=-Xms64m
+I/art     ( 1915): option[21]=-Ximage-compiler-option
+I/art     ( 1915): option[22]=--runtime-arg
+I/art     ( 1915): option[23]=-Ximage-compiler-option
+I/art     ( 1915): option[24]=-Xmx64m
+I/art     ( 1915): option[25]=-Ximage-compiler-option
+I/art     ( 1915): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 1915): option[27]=-Ximage-compiler-option
+I/art     ( 1915): option[28]=--image-classes=preloaded-classes
+I/art     ( 1915): option[29]=-Xcompiler-option
+I/art     ( 1915): option[30]=--runtime-arg
+I/art     ( 1915): option[31]=-Xcompiler-option
+I/art     ( 1915): option[32]=-Xms64m
+I/art     ( 1915): option[33]=-Xcompiler-option
+I/art     ( 1915): option[34]=--runtime-arg
+I/art     ( 1915): option[35]=-Xcompiler-option
+I/art     ( 1915): option[36]=-Xmx512m
+I/art     ( 1915): option[37]=-Duser.language=zh
+I/art     ( 1915): option[38]=-Duser.region=CN
+I/art     ( 1915): Pruning dalvik-cache since we are generating an image and will need to recompile
+I/art     ( 1915): Using an offset of 0x541000 from default art base address of 0x70000000
+I/art     ( 1915): GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/meizu2_jcifs.jar --dex-file=/system/framework/flyme-framework.jar --dex-file=/system/framework/com.meizu.camera.jar --dex-file=/system/framework/flyme-telephony-common.jar --dex-file=/system/framework/telephony-meizu.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features
+E/        ( 1896): Device driver API match
+E/        ( 1896): Device driver API version: 29
+E/        ( 1896): User space API version: 29 
+E/        ( 1896): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Tue Jul 22 19:59:34 KST 2014 
+D/gralloc ( 1896): int init_frame_buffer_locked(private_module_t*) Initializing framebuffer
+I/gralloc ( 1896): using (fd=24)
+I/gralloc ( 1896): id           = s3cfb
+I/gralloc ( 1896): xres         = 720 px
+I/gralloc ( 1896): yres         = 1280 px
+I/gralloc ( 1896): xres_virtual = 720 px
+I/gralloc ( 1896): yres_virtual = 2560 px
+I/gralloc ( 1896): bpp          = 32
+I/gralloc ( 1896): r            = 16:8
+I/gralloc ( 1896): g            =  8:8
+I/gralloc ( 1896): b            =  0:8
+I/gralloc ( 1896): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 1896): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 1896): refresh rate = 60.00 Hz
+D/HWCService( 1896): static android::ExynosHWCService* android::ExynosHWCService::getExynosHWCService()::
+D/HWCService( 1896): ExynosHWCService Constructor is called
+D/HWCService( 1896): int android::ExynosHWCService::createServiceLocked()::
+D/HWCService( 1896): adding Exynos.HWCService succeeded
+D/HWCService( 1896): HWCCtx=0x406b3000
+D/IPService( 1896): static android::ExynosIPService* android::ExynosIPService::getExynosIPService()::
+D/IPService( 1896): ExynosIPService Constructor is called
+D/IPService( 1896): int android::ExynosIPService::createServiceLocked()::
+D/IPService( 1896): adding Exynos.IPService succeeded
+D/SECHWC_LOG( 1896): using
+D/SECHWC_LOG( 1896): xres         = 720 px
+D/SECHWC_LOG( 1896): yres         = 1280 px
+D/SECHWC_LOG( 1896): width        = 60 mm (304.800000 dpi)
+D/SECHWC_LOG( 1896): height       = 106 mm (306.716000 dpi)
+D/SECHWC_LOG( 1896): refresh rate = 60 Hz
+E/SECHWC_LOG( 1896): int hwc_device_open(const hw_module_t*, const char*, hw_device_t**)::win-2 add[0]  71700000 
+E/SECHWC_LOG( 1896): int hwc_device_open(const hw_module_t*, const char*, hw_device_t**)::win-2 add[1]  71a84000 
+E/SECHWC_LOG( 1896): int hwc_device_open(const hw_module_t*, const char*, hw_device_t**)::win-2 add[2]  71e08000 
+D/SECHWC_LOG( 1896): Dump Window Information
+D/SECHWC_LOG( 1896): win->fd = 34
+D/SECHWC_LOG( 1896): win->size = 3686400
+D/SECHWC_LOG( 1896): win->rect_info.x = 0
+D/SECHWC_LOG( 1896): win->rect_info.y = 0
+D/SECHWC_LOG( 1896): win->rect_info.w = 720
+D/SECHWC_LOG( 1896): win->rect_info.h = 1280
+D/SECHWC_LOG( 1896): win->addr[0] = 0x71700000
+D/SECHWC_LOG( 1896): win->addr[1] = 0x71a84000
+D/SECHWC_LOG( 1896): win->addr[2] = 0x71e08000
+D/SECHWC_LOG( 1896): win->buf_index = 0
+D/SECHWC_LOG( 1896): win->power_state = 1
+D/SECHWC_LOG( 1896): win->blending = 0
+D/SECHWC_LOG( 1896): win->layer_index = 0
+D/SECHWC_LOG( 1896): win->status = 0
+D/SECHWC_LOG( 1896): win->vsync = 0
+D/SECHWC_LOG( 1896): win->fix_info.smem_start = 0x71700000
+D/SECHWC_LOG( 1896): win->fix_info.line_length = 2880
+D/SECHWC_LOG( 1896): win->var_info.xres = 720
+D/SECHWC_LOG( 1896): win->var_info.yres = 1280
+D/SECHWC_LOG( 1896): win->var_info.xres_virtual = 720
+D/SECHWC_LOG( 1896): win->var_info.yres_virtual = 2560
+D/SECHWC_LOG( 1896): win->var_info.xoffset = 0
+D/SECHWC_LOG( 1896): win->var_info.yoffset = 0
+D/SECHWC_LOG( 1896): win->lcd_info.xres = 720
+D/SECHWC_LOG( 1896): win->lcd_info.yres = 1280
+D/SECHWC_LOG( 1896): win->lcd_info.xoffset = 0
+D/SECHWC_LOG( 1896): win->lcd_info.yoffset = 0
+D/SECHWC_LOG( 1896): win->lcd_info.bits_per_pixel = 32
+E/SECHWC_LOG( 1896): int hwc_device_open(const hw_module_t*, const char*, hw_device_t**):: hwc_device_open: SUCCESS 
+E/SECHWC_LOG( 1896): 
+E/SECHWC_LOG( 1896): hwc_device_open:stretch failed -set dbuffer
+E/SurfaceFlinger( 1896): composer device failed to initialize (Operation not permitted)
+I/SurfaceFlinger( 1896): Using composer version 1.1
+I/SurfaceFlinger( 1896): EGL information:
+I/SurfaceFlinger( 1896): vendor    : Android
+I/SurfaceFlinger( 1896): version   : 1.4 Android META-EGL
+I/SurfaceFlinger( 1896): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_reusable_sync EGL_KHR_fence_sync EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_ANDROID_recordable 
+I/SurfaceFlinger( 1896): Client API: OpenGL_ES
+I/SurfaceFlinger( 1896): EGLSurface: 8-8-8-8, config=0x60000014
+E/cutils-trace( 2092): Error opening trace file: No such file or directory (2)
+I/dex2oat ( 2092): /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/meizu2_jcifs.jar --dex-file=/system/framework/flyme-framework.jar --dex-file=/system/framework/com.meizu.camera.jar --dex-file=/system/framework/flyme-telephony-common.jar --dex-file=/system/framework/telephony-meizu.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=default --base
+I/SurfaceFlinger( 1896): OpenGL ES informations:
+I/SurfaceFlinger( 1896): vendor    : ARM
+I/SurfaceFlinger( 1896): renderer  : Mali-400 MP
+I/SurfaceFlinger( 1896): version   : OpenGL ES 2.0
+I/SurfaceFlinger( 1896): extensions: GL_EXT_debug_marker GL_OES_texture_npot GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_depth24 GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_format_BGRA8888 GL_EXT_blend_minmax GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_rgb8_rgba8 GL_EXT_multisampled_render_to_texture GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_ARM_mali_program_binary GL_EXT_shader_texture_lod GL_EXT_robustness GL_OES_depth_texture_cube_map 
+I/SurfaceFlinger( 1896): GL_MAX_TEXTURE_SIZE = 4096
+I/SurfaceFlinger( 1896): GL_MAX_VIEWPORT_DIMS = 4096
+E/cutils-trace( 1896): Error opening trace file: No such file or directory (2)
+D/SurfaceFlinger( 1896): Set power mode=2, type=0 flinger=0x40662000
+D/SurfaceFlinger( 1896): shader cache generated - 24 shaders in 35.932083 ms
+D/libEGL  ( 2114): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2114): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2114): loaded /system/lib/egl/libGLESv2_mali.so
+V/NatController( 1900): runCmd(/system/bin/iptables -F natctrl_FORWARD) res=0
+V/NatController( 1900): runCmd(/system/bin/iptables -A natctrl_FORWARD -j DROP) res=0
+V/NatController( 1900): runCmd(/system/bin/iptables -t nat -F natctrl_nat_POSTROUTING) res=0
+V/NatController( 1900): runCmd(/system/bin/iptables -F natctrl_tether_counters) res=1
+V/NatController( 1900): runCmd(/system/bin/iptables -X natctrl_tether_counters) res=1
+V/NatController( 1900): runCmd(/system/bin/iptables -N natctrl_tether_counters) res=0
+V/NatController( 1900): runCmd(/system/bin/iptables -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+E/        ( 2114): Device driver API match
+E/        ( 2114): Device driver API version: 29
+E/        ( 2114): User space API version: 29 
+E/        ( 2114): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Tue Jul 22 19:59:34 KST 2014 
+E/cutils-trace( 2114): Error opening trace file: No such file or directory (2)
+I/ServiceManager( 1907): Waiting for service batterystats...
+D/MDnsDS  ( 1900): MDnsSdListener::Hander starting up
+D/MDnsDS  ( 1900): MDnsSdListener starting to monitor
+D/MDnsDS  ( 1900): Going to poll with pollCount 1
+I/ServiceManager( 1907): Waiting for service batterystats...
+E/sdcard  ( 1916): missing packages.list; retrying
+I/ServiceManager( 1907): Waiting for service batterystats...
+I/ServiceManager( 1907): Waiting for service batterystats...
+W/linker  ( 2239): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2239): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2239 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2239, tid: 2239, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be8331e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+E/MediaPlayerFactory( 1907): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 1907): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 1907): CameraService started (pid=1907)
+I/CameraService( 1907): Loaded "Exynos Camera - Dheeraj CVR" camera module
+D/exynos_camera( 1907): exynos_camera_get_number_of_cameras()
+I/AudioPolicyService( 1907): AudioPolicyService CSTOR in new mode
+I/AudioPolicyManager( 1907): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 1907): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 1907): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 1907): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 1907): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManager( 1907): could not open HW module primary
+I/audio_a2dp_hw( 1907): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 1907): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 1907): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 1907): adev_open(name=audio_hw_if)
+I/r_submix( 1907): adev_init_check()
+I/AudioFlinger( 1907): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+D/r_submix( 1907): adev_open_input_stream()
+D/r_submix( 1907): submix_audio_device_create_pipe()
+E/MonoPipe( 1907): Failed to fetch local time frequency when constructing a MonoPipe (res = -32).  getNextWriteTimestamp calls will be non-functional
+I/AudioFlinger( 1907): AudioFlinger's thread 0x41701000 ready to run
+D/r_submix( 1907): adev_close_input_stream()
+D/r_submix( 1907): submix_audio_device_release_pipe()
+D/r_submix( 1907): submix_audio_device_destroy_pipe(): pipe destroyed
+W/AudioPolicyManager( 1907): Input device 00000001 unreachable
+W/AudioPolicyManager( 1907): Input device 00000002 unreachable
+W/AudioPolicyManager( 1907): Input device 80000004 unreachable
+W/AudioPolicyManager( 1907): Input device 80000080 unreachable
+E/AudioPolicyManager( 1907): Default device 00000002 is unreachable
+E/AudioPolicyManager( 1907): Failed to open primary output
+E/AudioPolicyManager( 1907): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManager( 1907): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/SoundTriggerHwService( 1907): couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+I/dex2oat ( 2092): Explicit concurrent mark sweep GC freed 50534(7MB) AllocSpace objects, 0(0B) LOS objects, 12% free, 26MB/30MB, paused 382us total 149.026ms
+W/linker  ( 2246): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2246): Fatal signal 4 (SIGILL), code 1, fault addr 0x402800c0 in tid 2246 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2246, tid: 2246, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402800c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402c7ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402cc508  r5 402ccf58  r6 00000071  r7 402c6769
+I/DEBUG   ( 1901):     r8 402cc508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beb371e8  lr 402800b3  pc 402800c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+E/sdcard  ( 1916): missing packages.list; retrying
+I/dex2oat ( 2092): Method exceeds compiler instruction limit: 21296 in void org.ccil.cowan.tagsoup.HTMLSchema.<init>()
+W/linker  ( 2250): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2250): Fatal signal 4 (SIGILL), code 1, fault addr 0x402a80c0 in tid 2250 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2250, tid: 2250, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402a80c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402efee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402f4508  r5 402f4f58  r6 00000071  r7 402ee769
+I/DEBUG   ( 1901):     r8 402f4508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp befc71e8  lr 402a80b3  pc 402a80c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+I/dex2oat ( 2092): Method exceeds compiler instruction limit: 30537 in void com.flyme.internal.R.onResourcesLoaded(int)
+I/dex2oat ( 2092): Method exceeds compiler instruction limit: 30537 in void flyme.R.onResourcesLoaded(int)
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2252): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2252): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2252 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2252, tid: 2252, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp becd21e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2257): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2257): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2257 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2257, tid: 2257, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bec761e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_06
+I/dex2oat ( 2092): Explicit concurrent mark sweep GC freed 223542(17MB) AllocSpace objects, 0(0B) LOS objects, 23% free, 13MB/17MB, paused 361us total 95.969ms
+E/sdcard  ( 1916): missing packages.list; retrying
+I/dex2oat ( 2092): dex2oat took 26.523s (threads: 4)
+E/sdcard  ( 1916): missing packages.list; retrying
+E/cutils-trace( 1915): Error opening trace file: No such file or directory (2)
+F/libc    ( 1915): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c500c0 in tid 1915 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 1915, tid: 1915, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c500c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c97ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c9c508  r5 41c9cf58  r6 00000071  r7 41c96769
+I/DEBUG   ( 1901):     r8 41c9c508  r9 402bf2d0  sl bef9d790  fp bef9d860
+I/DEBUG   ( 1901):     ip 00000000  sp bef9d718  lr 41c500b3  pc 41c500c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+W/linker  ( 2266): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2266): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2266 (rild)
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_07
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2266, tid: 2266, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bec2e1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+I/ServiceManager( 1894): service 'media.player' died
+I/ServiceManager( 1894): service 'media.camera' died
+I/ServiceManager( 1894): service 'media.audio_policy' died
+I/ServiceManager( 1894): service 'media.sound_trigger_hw' died
+I/Netd    ( 2269): Netd 1.0 starting
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2269): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_09
+D/AndroidRuntime( 2268): 
+D/AndroidRuntime( 2268): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2268): CheckJNI is OFF
+I/art     ( 2268): option[0]=-Xzygote
+I/art     ( 2268): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2268): option[2]=exit
+I/art     ( 2268): option[3]=vfprintf
+I/art     ( 2268): option[4]=sensitiveThread
+I/art     ( 2268): option[5]=-verbose:gc
+I/art     ( 2268): option[6]=-Xms8m
+I/art     ( 2268): option[7]=-Xmx256m
+I/art     ( 2268): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2268): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2268): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2268): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2268): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2268): option[13]=-Xgenregmap
+I/art     ( 2268): option[14]=-Xgc:precise
+I/art     ( 2268): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2268): option[16]=-Xlockprofthreshold:500
+I/art     ( 2268): option[17]=-Ximage-compiler-option
+I/art     ( 2268): option[18]=--runtime-arg
+I/art     ( 2268): option[19]=-Ximage-compiler-option
+I/art     ( 2268): option[20]=-Xms64m
+I/art     ( 2268): option[21]=-Ximage-compiler-option
+I/art     ( 2268): option[22]=--runtime-arg
+I/art     ( 2268): option[23]=-Ximage-compiler-option
+I/art     ( 2268): option[24]=-Xmx64m
+I/art     ( 2268): option[25]=-Ximage-compiler-option
+I/art     ( 2268): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2268): option[27]=-Ximage-compiler-option
+I/art     ( 2268): option[28]=--image-classes=preloaded-classes
+I/art     ( 2268): option[29]=-Xcompiler-option
+I/art     ( 2268): option[30]=--runtime-arg
+I/art     ( 2268): option[31]=-Xcompiler-option
+I/art     ( 2268): option[32]=-Xms64m
+I/art     ( 2268): option[33]=-Xcompiler-option
+I/art     ( 2268): option[34]=--runtime-arg
+I/art     ( 2268): option[35]=-Xcompiler-option
+I/art     ( 2268): option[36]=-Xmx512m
+I/art     ( 2268): option[37]=-Duser.language=zh
+I/art     ( 2268): option[38]=-Duser.region=CN
+I/mediaserver( 2270): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2270): Using default 3000 mSec as standby time.
+I/ServiceManager( 2270): Waiting for service batterystats...
+E/cutils-trace( 2268): Error opening trace file: No such file or directory (2)
+F/libc    ( 2268): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c770c0 in tid 2268 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2268, tid: 2268, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c770c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41cbeee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cc3508  r5 41cc3f58  r6 00000071  r7 41cbd769
+I/DEBUG   ( 1901):     r8 41cc3508  r9 4036d2d0  sl bea91790  fp bea91860
+I/DEBUG   ( 1901):     ip 00000000  sp bea91718  lr 41c770b3  pc 41c770c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_00
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2394): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2394): Fatal signal 4 (SIGILL), code 1, fault addr 0x403330c0 in tid 2394 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2394, tid: 2394, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x403330c0
+I/DEBUG   ( 1901):     r0 00000017  r1 4037aee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 4037f508  r5 4037ff58  r6 00000071  r7 40379769
+I/DEBUG   ( 1901):     r8 4037f508  r9 4068790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bed451e8  lr 403330b3  pc 403330c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_01
+I/Netd    ( 2396): Netd 1.0 starting
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2396): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2398): 
+D/AndroidRuntime( 2398): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2398): CheckJNI is OFF
+I/art     ( 2398): option[0]=-Xzygote
+I/art     ( 2398): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2398): option[2]=exit
+I/art     ( 2398): option[3]=vfprintf
+I/art     ( 2398): option[4]=sensitiveThread
+I/art     ( 2398): option[5]=-verbose:gc
+I/art     ( 2398): option[6]=-Xms8m
+I/art     ( 2398): option[7]=-Xmx256m
+I/art     ( 2398): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2398): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2398): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2398): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2398): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2398): option[13]=-Xgenregmap
+I/art     ( 2398): option[14]=-Xgc:precise
+I/art     ( 2398): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2398): option[16]=-Xlockprofthreshold:500
+I/art     ( 2398): option[17]=-Ximage-compiler-option
+I/art     ( 2398): option[18]=--runtime-arg
+I/art     ( 2398): option[19]=-Ximage-compiler-option
+I/art     ( 2398): option[20]=-Xms64m
+I/art     ( 2398): option[21]=-Ximage-compiler-option
+I/art     ( 2398): option[22]=--runtime-arg
+I/art     ( 2398): option[23]=-Ximage-compiler-option
+I/art     ( 2398): option[24]=-Xmx64m
+I/art     ( 2398): option[25]=-Ximage-compiler-option
+I/art     ( 2398): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2398): option[27]=-Ximage-compiler-option
+I/art     ( 2398): option[28]=--image-classes=preloaded-classes
+I/art     ( 2398): option[29]=-Xcompiler-option
+I/art     ( 2398): option[30]=--runtime-arg
+I/art     ( 2398): option[31]=-Xcompiler-option
+I/art     ( 2398): option[32]=-Xms64m
+I/art     ( 2398): option[33]=-Xcompiler-option
+I/art     ( 2398): option[34]=--runtime-arg
+I/art     ( 2398): option[35]=-Xcompiler-option
+I/art     ( 2398): option[36]=-Xmx512m
+I/art     ( 2398): option[37]=-Duser.language=zh
+I/art     ( 2398): option[38]=-Duser.region=CN
+I/mediaserver( 2397): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2397): Using default 3000 mSec as standby time.
+I/ServiceManager( 2397): Waiting for service batterystats...
+E/cutils-trace( 2398): Error opening trace file: No such file or directory (2)
+F/libc    ( 2398): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c5d0c0 in tid 2398 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2398, tid: 2398, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c5d0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca4ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ca9508  r5 41ca9f58  r6 00000071  r7 41ca3769
+I/DEBUG   ( 1901):     r8 41ca9508  r9 403802d0  sl bef44790  fp bef44860
+I/DEBUG   ( 1901):     ip 00000000  sp bef44718  lr 41c5d0b3  pc 41c5d0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2482): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2482): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2482 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2482, tid: 2482, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be9341e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+I/Netd    ( 2484): Netd 1.0 starting
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2484): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2486): 
+D/AndroidRuntime( 2486): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2486): CheckJNI is OFF
+I/art     ( 2486): option[0]=-Xzygote
+I/art     ( 2486): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2486): option[2]=exit
+I/art     ( 2486): option[3]=vfprintf
+I/art     ( 2486): option[4]=sensitiveThread
+I/art     ( 2486): option[5]=-verbose:gc
+I/art     ( 2486): option[6]=-Xms8m
+I/art     ( 2486): option[7]=-Xmx256m
+I/art     ( 2486): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2486): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2486): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2486): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2486): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2486): option[13]=-Xgenregmap
+I/art     ( 2486): option[14]=-Xgc:precise
+I/art     ( 2486): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2486): option[16]=-Xlockprofthreshold:500
+I/art     ( 2486): option[17]=-Ximage-compiler-option
+I/art     ( 2486): option[18]=--runtime-arg
+I/art     ( 2486): option[19]=-Ximage-compiler-option
+I/art     ( 2486): option[20]=-Xms64m
+I/art     ( 2486): option[21]=-Ximage-compiler-option
+I/art     ( 2486): option[22]=--runtime-arg
+I/art     ( 2486): option[23]=-Ximage-compiler-option
+I/art     ( 2486): option[24]=-Xmx64m
+I/art     ( 2486): option[25]=-Ximage-compiler-option
+I/art     ( 2486): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2486): option[27]=-Ximage-compiler-option
+I/art     ( 2486): option[28]=--image-classes=preloaded-classes
+I/art     ( 2486): option[29]=-Xcompiler-option
+I/art     ( 2486): option[30]=--runtime-arg
+I/art     ( 2486): option[31]=-Xcompiler-option
+I/art     ( 2486): option[32]=-Xms64m
+I/art     ( 2486): option[33]=-Xcompiler-option
+I/art     ( 2486): option[34]=--runtime-arg
+I/art     ( 2486): option[35]=-Xcompiler-option
+I/art     ( 2486): option[36]=-Xmx512m
+I/art     ( 2486): option[37]=-Duser.language=zh
+I/art     ( 2486): option[38]=-Duser.region=CN
+I/mediaserver( 2485): ServiceManager: 0x40f500c0
+I/AudioFlinger( 2485): Using default 3000 mSec as standby time.
+I/ServiceManager( 2485): Waiting for service batterystats...
+E/cutils-trace( 2486): Error opening trace file: No such file or directory (2)
+F/libc    ( 2486): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c600c0 in tid 2486 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2486, tid: 2486, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c600c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca7ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cac508  r5 41cacf58  r6 00000071  r7 41ca6769
+I/DEBUG   ( 1901):     r8 41cac508  r9 403112d0  sl befa9790  fp befa9860
+I/DEBUG   ( 1901):     ip 00000000  sp befa9718  lr 41c600b3  pc 41c600c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2562): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2562): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2562 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2562, tid: 2562, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bed891e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+I/Netd    ( 2564): Netd 1.0 starting
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2564): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2566): 
+D/AndroidRuntime( 2566): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2566): CheckJNI is OFF
+I/art     ( 2566): option[0]=-Xzygote
+I/art     ( 2566): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2566): option[2]=exit
+I/art     ( 2566): option[3]=vfprintf
+I/art     ( 2566): option[4]=sensitiveThread
+I/art     ( 2566): option[5]=-verbose:gc
+I/art     ( 2566): option[6]=-Xms8m
+I/art     ( 2566): option[7]=-Xmx256m
+I/art     ( 2566): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2566): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2566): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2566): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2566): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2566): option[13]=-Xgenregmap
+I/art     ( 2566): option[14]=-Xgc:precise
+I/art     ( 2566): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2566): option[16]=-Xlockprofthreshold:500
+I/art     ( 2566): option[17]=-Ximage-compiler-option
+I/art     ( 2566): option[18]=--runtime-arg
+I/art     ( 2566): option[19]=-Ximage-compiler-option
+I/art     ( 2566): option[20]=-Xms64m
+I/art     ( 2566): option[21]=-Ximage-compiler-option
+I/art     ( 2566): option[22]=--runtime-arg
+I/art     ( 2566): option[23]=-Ximage-compiler-option
+I/art     ( 2566): option[24]=-Xmx64m
+I/art     ( 2566): option[25]=-Ximage-compiler-option
+I/art     ( 2566): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2566): option[27]=-Ximage-compiler-option
+I/art     ( 2566): option[28]=--image-classes=preloaded-classes
+I/art     ( 2566): option[29]=-Xcompiler-option
+I/art     ( 2566): option[30]=--runtime-arg
+I/art     ( 2566): option[31]=-Xcompiler-option
+I/art     ( 2566): option[32]=-Xms64m
+I/art     ( 2566): option[33]=-Xcompiler-option
+I/art     ( 2566): option[34]=--runtime-arg
+I/art     ( 2566): option[35]=-Xcompiler-option
+I/art     ( 2566): option[36]=-Xmx512m
+I/art     ( 2566): option[37]=-Duser.language=zh
+I/art     ( 2566): option[38]=-Duser.region=CN
+I/mediaserver( 2565): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2565): Using default 3000 mSec as standby time.
+I/ServiceManager( 2565): Waiting for service batterystats...
+E/cutils-trace( 2566): Error opening trace file: No such file or directory (2)
+F/libc    ( 2566): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c740c0 in tid 2566 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2566, tid: 2566, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c740c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41cbbee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cc0508  r5 41cc0f58  r6 00000071  r7 41cba769
+I/DEBUG   ( 1901):     r8 41cc0508  r9 402e22d0  sl bee08790  fp bee08860
+I/DEBUG   ( 1901):     ip 00000000  sp bee08718  lr 41c740b3  pc 41c740c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2641): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2641): Fatal signal 4 (SIGILL), code 1, fault addr 0x402720c0 in tid 2641 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2641, tid: 2641, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402720c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402b9ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402be508  r5 402bef58  r6 00000071  r7 402b8769
+I/DEBUG   ( 1901):     r8 402be508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bea7c1e8  lr 402720b3  pc 402720c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_06
+I/Netd    ( 2643): Netd 1.0 starting
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2643): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2645): 
+D/AndroidRuntime( 2645): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2645): CheckJNI is OFF
+I/art     ( 2645): option[0]=-Xzygote
+I/art     ( 2645): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2645): option[2]=exit
+I/art     ( 2645): option[3]=vfprintf
+I/art     ( 2645): option[4]=sensitiveThread
+I/art     ( 2645): option[5]=-verbose:gc
+I/art     ( 2645): option[6]=-Xms8m
+I/art     ( 2645): option[7]=-Xmx256m
+I/art     ( 2645): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2645): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2645): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2645): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2645): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2645): option[13]=-Xgenregmap
+I/art     ( 2645): option[14]=-Xgc:precise
+I/art     ( 2645): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2645): option[16]=-Xlockprofthreshold:500
+I/art     ( 2645): option[17]=-Ximage-compiler-option
+I/art     ( 2645): option[18]=--runtime-arg
+I/art     ( 2645): option[19]=-Ximage-compiler-option
+I/art     ( 2645): option[20]=-Xms64m
+I/art     ( 2645): option[21]=-Ximage-compiler-option
+I/art     ( 2645): option[22]=--runtime-arg
+I/art     ( 2645): option[23]=-Ximage-compiler-option
+I/art     ( 2645): option[24]=-Xmx64m
+I/art     ( 2645): option[25]=-Ximage-compiler-option
+I/art     ( 2645): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2645): option[27]=-Ximage-compiler-option
+I/art     ( 2645): option[28]=--image-classes=preloaded-classes
+I/art     ( 2645): option[29]=-Xcompiler-option
+I/art     ( 2645): option[30]=--runtime-arg
+I/art     ( 2645): option[31]=-Xcompiler-option
+I/art     ( 2645): option[32]=-Xms64m
+I/art     ( 2645): option[33]=-Xcompiler-option
+I/art     ( 2645): option[34]=--runtime-arg
+I/art     ( 2645): option[35]=-Xcompiler-option
+I/art     ( 2645): option[36]=-Xmx512m
+I/art     ( 2645): option[37]=-Duser.language=zh
+I/art     ( 2645): option[38]=-Duser.region=CN
+E/cutils-trace( 2645): Error opening trace file: No such file or directory (2)
+F/libc    ( 2645): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c3c0c0 in tid 2645 (main)
+I/mediaserver( 2644): ServiceManager: 0x40f500c0
+I/AudioFlinger( 2644): Using default 3000 mSec as standby time.
+I/ServiceManager( 2644): Waiting for service batterystats...
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2645, tid: 2645, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c3c0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c83ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c88508  r5 41c88f58  r6 00000071  r7 41c82769
+I/DEBUG   ( 1901):     r8 41c88508  r9 402e72d0  sl bef87790  fp bef87860
+I/DEBUG   ( 1901):     ip 00000000  sp bef87718  lr 41c3c0b3  pc 41c3c0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_00
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2692): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2692): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2692 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2692, tid: 2692, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be80c1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_07
+I/Netd    ( 2694): Netd 1.0 starting
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2694): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2696): 
+D/AndroidRuntime( 2696): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2696): CheckJNI is OFF
+I/art     ( 2696): option[0]=-Xzygote
+I/art     ( 2696): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2696): option[2]=exit
+I/art     ( 2696): option[3]=vfprintf
+I/art     ( 2696): option[4]=sensitiveThread
+I/art     ( 2696): option[5]=-verbose:gc
+I/art     ( 2696): option[6]=-Xms8m
+I/art     ( 2696): option[7]=-Xmx256m
+I/art     ( 2696): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2696): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2696): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2696): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2696): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2696): option[13]=-Xgenregmap
+I/art     ( 2696): option[14]=-Xgc:precise
+I/art     ( 2696): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2696): option[16]=-Xlockprofthreshold:500
+I/art     ( 2696): option[17]=-Ximage-compiler-option
+I/art     ( 2696): option[18]=--runtime-arg
+I/art     ( 2696): option[19]=-Ximage-compiler-option
+I/art     ( 2696): option[20]=-Xms64m
+I/art     ( 2696): option[21]=-Ximage-compiler-option
+I/art     ( 2696): option[22]=--runtime-arg
+I/art     ( 2696): option[23]=-Ximage-compiler-option
+I/art     ( 2696): option[24]=-Xmx64m
+I/art     ( 2696): option[25]=-Ximage-compiler-option
+I/art     ( 2696): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2696): option[27]=-Ximage-compiler-option
+I/art     ( 2696): option[28]=--image-classes=preloaded-classes
+I/art     ( 2696): option[29]=-Xcompiler-option
+I/art     ( 2696): option[30]=--runtime-arg
+I/art     ( 2696): option[31]=-Xcompiler-option
+I/art     ( 2696): option[32]=-Xms64m
+I/art     ( 2696): option[33]=-Xcompiler-option
+I/art     ( 2696): option[34]=--runtime-arg
+I/art     ( 2696): option[35]=-Xcompiler-option
+I/art     ( 2696): option[36]=-Xmx512m
+I/art     ( 2696): option[37]=-Duser.language=zh
+I/art     ( 2696): option[38]=-Duser.region=CN
+E/cutils-trace( 2696): Error opening trace file: No such file or directory (2)
+F/libc    ( 2696): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c4e0c0 in tid 2696 (main)
+I/mediaserver( 2695): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2695): Using default 3000 mSec as standby time.
+I/ServiceManager( 2695): Waiting for service batterystats...
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2696, tid: 2696, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c4e0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c95ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c9a508  r5 41c9af58  r6 00000071  r7 41c94769
+I/DEBUG   ( 1901):     r8 41c9a508  r9 402e22d0  sl bef6c790  fp bef6c860
+I/DEBUG   ( 1901):     ip 00000000  sp bef6c718  lr 41c4e0b3  pc 41c4e0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_09
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2754): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2754): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2754 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2754, tid: 2754, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beede1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_01
+I/Netd    ( 2756): Netd 1.0 starting
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2756): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2758): 
+D/AndroidRuntime( 2758): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2758): CheckJNI is OFF
+I/art     ( 2758): option[0]=-Xzygote
+I/art     ( 2758): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2758): option[2]=exit
+I/art     ( 2758): option[3]=vfprintf
+I/art     ( 2758): option[4]=sensitiveThread
+I/art     ( 2758): option[5]=-verbose:gc
+I/art     ( 2758): option[6]=-Xms8m
+I/art     ( 2758): option[7]=-Xmx256m
+I/art     ( 2758): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2758): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2758): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2758): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2758): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2758): option[13]=-Xgenregmap
+I/art     ( 2758): option[14]=-Xgc:precise
+I/art     ( 2758): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2758): option[16]=-Xlockprofthreshold:500
+I/art     ( 2758): option[17]=-Ximage-compiler-option
+I/art     ( 2758): option[18]=--runtime-arg
+I/art     ( 2758): option[19]=-Ximage-compiler-option
+I/art     ( 2758): option[20]=-Xms64m
+I/art     ( 2758): option[21]=-Ximage-compiler-option
+I/art     ( 2758): option[22]=--runtime-arg
+I/art     ( 2758): option[23]=-Ximage-compiler-option
+I/art     ( 2758): option[24]=-Xmx64m
+I/art     ( 2758): option[25]=-Ximage-compiler-option
+I/art     ( 2758): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2758): option[27]=-Ximage-compiler-option
+I/art     ( 2758): option[28]=--image-classes=preloaded-classes
+I/art     ( 2758): option[29]=-Xcompiler-option
+I/art     ( 2758): option[30]=--runtime-arg
+I/art     ( 2758): option[31]=-Xcompiler-option
+I/art     ( 2758): option[32]=-Xms64m
+I/art     ( 2758): option[33]=-Xcompiler-option
+I/art     ( 2758): option[34]=--runtime-arg
+I/art     ( 2758): option[35]=-Xcompiler-option
+I/art     ( 2758): option[36]=-Xmx512m
+I/art     ( 2758): option[37]=-Duser.language=zh
+I/art     ( 2758): option[38]=-Duser.region=CN
+E/cutils-trace( 2758): Error opening trace file: No such file or directory (2)
+I/mediaserver( 2757): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2757): Using default 3000 mSec as standby time.
+I/ServiceManager( 2757): Waiting for service batterystats...
+F/libc    ( 2758): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c540c0 in tid 2758 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2758, tid: 2758, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c540c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c9bee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ca0508  r5 41ca0f58  r6 00000071  r7 41c9a769
+I/DEBUG   ( 1901):     r8 41ca0508  r9 4033f2d0  sl be957790  fp be957860
+I/DEBUG   ( 1901):     ip 00000000  sp be957718  lr 41c540b3  pc 41c540c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2830): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2830): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2830 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2830, tid: 2830, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bee3d1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+I/Netd    ( 2832): Netd 1.0 starting
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2832): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2834): 
+D/AndroidRuntime( 2834): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2834): CheckJNI is OFF
+I/art     ( 2834): option[0]=-Xzygote
+I/art     ( 2834): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2834): option[2]=exit
+I/art     ( 2834): option[3]=vfprintf
+I/art     ( 2834): option[4]=sensitiveThread
+I/art     ( 2834): option[5]=-verbose:gc
+I/art     ( 2834): option[6]=-Xms8m
+I/art     ( 2834): option[7]=-Xmx256m
+I/art     ( 2834): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2834): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2834): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2834): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2834): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2834): option[13]=-Xgenregmap
+I/art     ( 2834): option[14]=-Xgc:precise
+I/art     ( 2834): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2834): option[16]=-Xlockprofthreshold:500
+I/art     ( 2834): option[17]=-Ximage-compiler-option
+I/art     ( 2834): option[18]=--runtime-arg
+I/art     ( 2834): option[19]=-Ximage-compiler-option
+I/art     ( 2834): option[20]=-Xms64m
+I/art     ( 2834): option[21]=-Ximage-compiler-option
+I/art     ( 2834): option[22]=--runtime-arg
+I/art     ( 2834): option[23]=-Ximage-compiler-option
+I/art     ( 2834): option[24]=-Xmx64m
+I/art     ( 2834): option[25]=-Ximage-compiler-option
+I/art     ( 2834): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2834): option[27]=-Ximage-compiler-option
+I/art     ( 2834): option[28]=--image-classes=preloaded-classes
+I/art     ( 2834): option[29]=-Xcompiler-option
+I/art     ( 2834): option[30]=--runtime-arg
+I/art     ( 2834): option[31]=-Xcompiler-option
+I/art     ( 2834): option[32]=-Xms64m
+I/art     ( 2834): option[33]=-Xcompiler-option
+I/art     ( 2834): option[34]=--runtime-arg
+I/art     ( 2834): option[35]=-Xcompiler-option
+I/art     ( 2834): option[36]=-Xmx512m
+I/art     ( 2834): option[37]=-Duser.language=zh
+I/art     ( 2834): option[38]=-Duser.region=CN
+I/mediaserver( 2833): ServiceManager: 0x40f500c0
+I/AudioFlinger( 2833): Using default 3000 mSec as standby time.
+I/ServiceManager( 2833): Waiting for service batterystats...
+E/cutils-trace( 2834): Error opening trace file: No such file or directory (2)
+F/libc    ( 2834): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c690c0 in tid 2834 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2834, tid: 2834, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c690c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41cb0ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cb5508  r5 41cb5f58  r6 00000071  r7 41caf769
+I/DEBUG   ( 1901):     r8 41cb5508  r9 402ff2d0  sl becca790  fp becca860
+I/DEBUG   ( 1901):     ip 00000000  sp becca718  lr 41c690b3  pc 41c690c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2912): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2912): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2912 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2912, tid: 2912, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bee6f1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+I/Netd    ( 2914): Netd 1.0 starting
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2914): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2916): 
+D/AndroidRuntime( 2916): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2916): CheckJNI is OFF
+I/art     ( 2916): option[0]=-Xzygote
+I/art     ( 2916): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2916): option[2]=exit
+I/art     ( 2916): option[3]=vfprintf
+I/art     ( 2916): option[4]=sensitiveThread
+I/art     ( 2916): option[5]=-verbose:gc
+I/art     ( 2916): option[6]=-Xms8m
+I/art     ( 2916): option[7]=-Xmx256m
+I/art     ( 2916): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2916): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2916): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2916): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2916): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2916): option[13]=-Xgenregmap
+I/art     ( 2916): option[14]=-Xgc:precise
+I/art     ( 2916): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2916): option[16]=-Xlockprofthreshold:500
+I/art     ( 2916): option[17]=-Ximage-compiler-option
+I/art     ( 2916): option[18]=--runtime-arg
+I/art     ( 2916): option[19]=-Ximage-compiler-option
+I/art     ( 2916): option[20]=-Xms64m
+I/art     ( 2916): option[21]=-Ximage-compiler-option
+I/art     ( 2916): option[22]=--runtime-arg
+I/art     ( 2916): option[23]=-Ximage-compiler-option
+I/art     ( 2916): option[24]=-Xmx64m
+I/art     ( 2916): option[25]=-Ximage-compiler-option
+I/art     ( 2916): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2916): option[27]=-Ximage-compiler-option
+I/art     ( 2916): option[28]=--image-classes=preloaded-classes
+I/art     ( 2916): option[29]=-Xcompiler-option
+I/art     ( 2916): option[30]=--runtime-arg
+I/art     ( 2916): option[31]=-Xcompiler-option
+I/art     ( 2916): option[32]=-Xms64m
+I/art     ( 2916): option[33]=-Xcompiler-option
+I/art     ( 2916): option[34]=--runtime-arg
+I/art     ( 2916): option[35]=-Xcompiler-option
+I/art     ( 2916): option[36]=-Xmx512m
+I/art     ( 2916): option[37]=-Duser.language=zh
+I/art     ( 2916): option[38]=-Duser.region=CN
+I/mediaserver( 2915): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2915): Using default 3000 mSec as standby time.
+I/ServiceManager( 2915): Waiting for service batterystats...
+E/cutils-trace( 2916): Error opening trace file: No such file or directory (2)
+F/libc    ( 2916): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c5c0c0 in tid 2916 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2916, tid: 2916, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c5c0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca3ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ca8508  r5 41ca8f58  r6 00000071  r7 41ca2769
+I/DEBUG   ( 1901):     r8 41ca8508  r9 4032b2d0  sl becb2790  fp becb2860
+I/DEBUG   ( 1901):     ip 00000000  sp becb2718  lr 41c5c0b3  pc 41c5c0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 2991): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 2991): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 2991 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2991, tid: 2991, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be8471e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_00
+I/Netd    ( 2993): Netd 1.0 starting
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 2993): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 2995): 
+D/AndroidRuntime( 2995): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 2995): CheckJNI is OFF
+I/art     ( 2995): option[0]=-Xzygote
+I/art     ( 2995): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 2995): option[2]=exit
+I/art     ( 2995): option[3]=vfprintf
+I/art     ( 2995): option[4]=sensitiveThread
+I/art     ( 2995): option[5]=-verbose:gc
+I/art     ( 2995): option[6]=-Xms8m
+I/art     ( 2995): option[7]=-Xmx256m
+I/art     ( 2995): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 2995): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 2995): option[10]=-XX:HeapMinFree=2m
+I/art     ( 2995): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 2995): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 2995): option[13]=-Xgenregmap
+I/art     ( 2995): option[14]=-Xgc:precise
+I/art     ( 2995): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 2995): option[16]=-Xlockprofthreshold:500
+I/art     ( 2995): option[17]=-Ximage-compiler-option
+I/art     ( 2995): option[18]=--runtime-arg
+I/art     ( 2995): option[19]=-Ximage-compiler-option
+I/art     ( 2995): option[20]=-Xms64m
+I/art     ( 2995): option[21]=-Ximage-compiler-option
+I/art     ( 2995): option[22]=--runtime-arg
+I/art     ( 2995): option[23]=-Ximage-compiler-option
+I/art     ( 2995): option[24]=-Xmx64m
+I/art     ( 2995): option[25]=-Ximage-compiler-option
+I/art     ( 2995): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 2995): option[27]=-Ximage-compiler-option
+I/art     ( 2995): option[28]=--image-classes=preloaded-classes
+I/art     ( 2995): option[29]=-Xcompiler-option
+I/art     ( 2995): option[30]=--runtime-arg
+I/art     ( 2995): option[31]=-Xcompiler-option
+I/art     ( 2995): option[32]=-Xms64m
+I/art     ( 2995): option[33]=-Xcompiler-option
+I/art     ( 2995): option[34]=--runtime-arg
+I/art     ( 2995): option[35]=-Xcompiler-option
+I/art     ( 2995): option[36]=-Xmx512m
+I/art     ( 2995): option[37]=-Duser.language=zh
+I/art     ( 2995): option[38]=-Duser.region=CN
+I/mediaserver( 2994): ServiceManager: 0x40e500c0
+I/AudioFlinger( 2994): Using default 3000 mSec as standby time.
+I/ServiceManager( 2994): Waiting for service batterystats...
+E/cutils-trace( 2995): Error opening trace file: No such file or directory (2)
+F/libc    ( 2995): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c340c0 in tid 2995 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 2995, tid: 2995, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c340c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c7bee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c80508  r5 41c80f58  r6 00000071  r7 41c7a769
+I/DEBUG   ( 1901):     r8 41c80508  r9 4028e2d0  sl be995790  fp be995860
+I/DEBUG   ( 1901):     ip 00000000  sp be995718  lr 41c340b3  pc 41c340c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_06
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3065): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3065): Fatal signal 4 (SIGILL), code 1, fault addr 0x406130c0 in tid 3065 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3065, tid: 3065, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x406130c0
+I/DEBUG   ( 1901):     r0 00000017  r1 4065aee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 4065f508  r5 4065ff58  r6 00000071  r7 40659769
+I/DEBUG   ( 1901):     r8 4065f508  r9 4039a90a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bee9c1e8  lr 406130b3  pc 406130c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_07
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3067): Netd 1.0 starting
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3067): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3069): 
+D/AndroidRuntime( 3069): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3069): CheckJNI is OFF
+I/art     ( 3069): option[0]=-Xzygote
+I/art     ( 3069): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3069): option[2]=exit
+I/art     ( 3069): option[3]=vfprintf
+I/art     ( 3069): option[4]=sensitiveThread
+I/art     ( 3069): option[5]=-verbose:gc
+I/art     ( 3069): option[6]=-Xms8m
+I/art     ( 3069): option[7]=-Xmx256m
+I/art     ( 3069): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3069): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3069): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3069): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3069): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3069): option[13]=-Xgenregmap
+I/art     ( 3069): option[14]=-Xgc:precise
+I/art     ( 3069): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3069): option[16]=-Xlockprofthreshold:500
+I/art     ( 3069): option[17]=-Ximage-compiler-option
+I/art     ( 3069): option[18]=--runtime-arg
+I/art     ( 3069): option[19]=-Ximage-compiler-option
+I/art     ( 3069): option[20]=-Xms64m
+I/art     ( 3069): option[21]=-Ximage-compiler-option
+I/art     ( 3069): option[22]=--runtime-arg
+I/art     ( 3069): option[23]=-Ximage-compiler-option
+I/art     ( 3069): option[24]=-Xmx64m
+I/art     ( 3069): option[25]=-Ximage-compiler-option
+I/art     ( 3069): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3069): option[27]=-Ximage-compiler-option
+I/art     ( 3069): option[28]=--image-classes=preloaded-classes
+I/art     ( 3069): option[29]=-Xcompiler-option
+I/art     ( 3069): option[30]=--runtime-arg
+I/art     ( 3069): option[31]=-Xcompiler-option
+I/art     ( 3069): option[32]=-Xms64m
+I/art     ( 3069): option[33]=-Xcompiler-option
+I/art     ( 3069): option[34]=--runtime-arg
+I/art     ( 3069): option[35]=-Xcompiler-option
+I/art     ( 3069): option[36]=-Xmx512m
+I/art     ( 3069): option[37]=-Duser.language=zh
+I/art     ( 3069): option[38]=-Duser.region=CN
+E/cutils-trace( 3069): Error opening trace file: No such file or directory (2)
+F/libc    ( 3069): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c660c0 in tid 3069 (main)
+I/mediaserver( 3068): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3068): Using default 3000 mSec as standby time.
+I/ServiceManager( 3068): Waiting for service batterystats...
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3069, tid: 3069, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c660c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41cadee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cb2508  r5 41cb2f58  r6 00000071  r7 41cac769
+I/DEBUG   ( 1901):     r8 41cb2508  r9 402b32d0  sl bea84790  fp bea84860
+I/DEBUG   ( 1901):     ip 00000000  sp bea84718  lr 41c660b3  pc 41c660c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_09
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3122): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3122): Fatal signal 4 (SIGILL), code 1, fault addr 0x402900c0 in tid 3122 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3122, tid: 3122, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402900c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402d7ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402dc508  r5 402dcf58  r6 00000071  r7 402d6769
+I/DEBUG   ( 1901):     r8 402dc508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bea3e1e8  lr 402900b3  pc 402900c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_01
+I/Netd    ( 3125): Netd 1.0 starting
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3125): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3127): 
+D/AndroidRuntime( 3127): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3127): CheckJNI is OFF
+I/art     ( 3127): option[0]=-Xzygote
+I/art     ( 3127): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3127): option[2]=exit
+I/art     ( 3127): option[3]=vfprintf
+I/art     ( 3127): option[4]=sensitiveThread
+I/art     ( 3127): option[5]=-verbose:gc
+I/art     ( 3127): option[6]=-Xms8m
+I/art     ( 3127): option[7]=-Xmx256m
+I/art     ( 3127): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3127): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3127): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3127): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3127): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3127): option[13]=-Xgenregmap
+I/art     ( 3127): option[14]=-Xgc:precise
+I/art     ( 3127): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3127): option[16]=-Xlockprofthreshold:500
+I/art     ( 3127): option[17]=-Ximage-compiler-option
+I/art     ( 3127): option[18]=--runtime-arg
+I/art     ( 3127): option[19]=-Ximage-compiler-option
+I/art     ( 3127): option[20]=-Xms64m
+I/art     ( 3127): option[21]=-Ximage-compiler-option
+I/art     ( 3127): option[22]=--runtime-arg
+I/art     ( 3127): option[23]=-Ximage-compiler-option
+I/art     ( 3127): option[24]=-Xmx64m
+I/art     ( 3127): option[25]=-Ximage-compiler-option
+I/art     ( 3127): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3127): option[27]=-Ximage-compiler-option
+I/art     ( 3127): option[28]=--image-classes=preloaded-classes
+I/art     ( 3127): option[29]=-Xcompiler-option
+I/art     ( 3127): option[30]=--runtime-arg
+I/art     ( 3127): option[31]=-Xcompiler-option
+I/art     ( 3127): option[32]=-Xms64m
+I/art     ( 3127): option[33]=-Xcompiler-option
+I/art     ( 3127): option[34]=--runtime-arg
+I/art     ( 3127): option[35]=-Xcompiler-option
+I/art     ( 3127): option[36]=-Xmx512m
+I/art     ( 3127): option[37]=-Duser.language=zh
+I/art     ( 3127): option[38]=-Duser.region=CN
+I/mediaserver( 3126): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3126): Using default 3000 mSec as standby time.
+I/ServiceManager( 3126): Waiting for service batterystats...
+E/cutils-trace( 3127): Error opening trace file: No such file or directory (2)
+F/libc    ( 3127): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c490c0 in tid 3127 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3127, tid: 3127, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c490c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c90ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c95508  r5 41c95f58  r6 00000071  r7 41c8f769
+I/DEBUG   ( 1901):     r8 41c95508  r9 402b82d0  sl befad790  fp befad860
+I/DEBUG   ( 1901):     ip 00000000  sp befad718  lr 41c490b3  pc 41c490c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3202): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3202): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 3202 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3202, tid: 3202, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be9b11e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+I/Netd    ( 3204): Netd 1.0 starting
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3204): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3206): 
+D/AndroidRuntime( 3206): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3206): CheckJNI is OFF
+I/art     ( 3206): option[0]=-Xzygote
+I/art     ( 3206): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3206): option[2]=exit
+I/art     ( 3206): option[3]=vfprintf
+I/art     ( 3206): option[4]=sensitiveThread
+I/art     ( 3206): option[5]=-verbose:gc
+I/art     ( 3206): option[6]=-Xms8m
+I/art     ( 3206): option[7]=-Xmx256m
+I/art     ( 3206): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3206): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3206): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3206): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3206): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3206): option[13]=-Xgenregmap
+I/art     ( 3206): option[14]=-Xgc:precise
+I/art     ( 3206): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3206): option[16]=-Xlockprofthreshold:500
+I/art     ( 3206): option[17]=-Ximage-compiler-option
+I/art     ( 3206): option[18]=--runtime-arg
+I/art     ( 3206): option[19]=-Ximage-compiler-option
+I/art     ( 3206): option[20]=-Xms64m
+I/art     ( 3206): option[21]=-Ximage-compiler-option
+I/art     ( 3206): option[22]=--runtime-arg
+I/art     ( 3206): option[23]=-Ximage-compiler-option
+I/art     ( 3206): option[24]=-Xmx64m
+I/art     ( 3206): option[25]=-Ximage-compiler-option
+I/art     ( 3206): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3206): option[27]=-Ximage-compiler-option
+I/art     ( 3206): option[28]=--image-classes=preloaded-classes
+I/art     ( 3206): option[29]=-Xcompiler-option
+I/art     ( 3206): option[30]=--runtime-arg
+I/art     ( 3206): option[31]=-Xcompiler-option
+I/art     ( 3206): option[32]=-Xms64m
+I/art     ( 3206): option[33]=-Xcompiler-option
+I/art     ( 3206): option[34]=--runtime-arg
+I/art     ( 3206): option[35]=-Xcompiler-option
+I/art     ( 3206): option[36]=-Xmx512m
+I/art     ( 3206): option[37]=-Duser.language=zh
+I/art     ( 3206): option[38]=-Duser.region=CN
+F/libc    ( 3206): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c4b0c0 in tid 3206 (main)
+I/mediaserver( 3205): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3205): Using default 3000 mSec as standby time.
+I/ServiceManager( 3205): Waiting for service batterystats...
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3206, tid: 3206, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c4b0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c92ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c97508  r5 41c97f58  r6 00000071  r7 41c91769
+I/DEBUG   ( 1901):     r8 41c97508  r9 403702d0  sl bead4790  fp bead4860
+I/DEBUG   ( 1901):     ip 00000000  sp bead4718  lr 41c4b0b3  pc 41c4b0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3255): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3255): Fatal signal 4 (SIGILL), code 1, fault addr 0x4029e0c0 in tid 3255 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3255, tid: 3255, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x4029e0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402e5ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402ea508  r5 402eaf58  r6 00000071  r7 402e4769
+I/DEBUG   ( 1901):     r8 402ea508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be9be1e8  lr 4029e0b3  pc 4029e0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3257): Netd 1.0 starting
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3257): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3259): 
+D/AndroidRuntime( 3259): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3259): CheckJNI is OFF
+I/art     ( 3259): option[0]=-Xzygote
+I/art     ( 3259): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3259): option[2]=exit
+I/art     ( 3259): option[3]=vfprintf
+I/art     ( 3259): option[4]=sensitiveThread
+I/art     ( 3259): option[5]=-verbose:gc
+I/art     ( 3259): option[6]=-Xms8m
+I/art     ( 3259): option[7]=-Xmx256m
+I/art     ( 3259): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3259): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3259): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3259): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3259): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3259): option[13]=-Xgenregmap
+I/art     ( 3259): option[14]=-Xgc:precise
+I/art     ( 3259): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3259): option[16]=-Xlockprofthreshold:500
+I/art     ( 3259): option[17]=-Ximage-compiler-option
+I/art     ( 3259): option[18]=--runtime-arg
+I/art     ( 3259): option[19]=-Ximage-compiler-option
+I/art     ( 3259): option[20]=-Xms64m
+I/art     ( 3259): option[21]=-Ximage-compiler-option
+I/art     ( 3259): option[22]=--runtime-arg
+I/art     ( 3259): option[23]=-Ximage-compiler-option
+I/art     ( 3259): option[24]=-Xmx64m
+I/art     ( 3259): option[25]=-Ximage-compiler-option
+I/art     ( 3259): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3259): option[27]=-Ximage-compiler-option
+I/art     ( 3259): option[28]=--image-classes=preloaded-classes
+I/art     ( 3259): option[29]=-Xcompiler-option
+I/art     ( 3259): option[30]=--runtime-arg
+I/art     ( 3259): option[31]=-Xcompiler-option
+I/art     ( 3259): option[32]=-Xms64m
+I/art     ( 3259): option[33]=-Xcompiler-option
+I/art     ( 3259): option[34]=--runtime-arg
+I/art     ( 3259): option[35]=-Xcompiler-option
+I/art     ( 3259): option[36]=-Xmx512m
+I/art     ( 3259): option[37]=-Duser.language=zh
+I/art     ( 3259): option[38]=-Duser.region=CN
+I/mediaserver( 3258): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3258): Using default 3000 mSec as standby time.
+I/ServiceManager( 3258): Waiting for service batterystats...
+E/cutils-trace( 3259): Error opening trace file: No such file or directory (2)
+F/libc    ( 3259): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c600c0 in tid 3259 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3259, tid: 3259, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c600c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca7ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cac508  r5 41cacf58  r6 00000071  r7 41ca6769
+I/DEBUG   ( 1901):     r8 41cac508  r9 4034f2d0  sl beee4790  fp beee4860
+I/DEBUG   ( 1901):     ip 00000000  sp beee4718  lr 41c600b3  pc 41c600c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3336): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3336): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 3336 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3336, tid: 3336, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bef531e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_00
+I/Netd    ( 3338): Netd 1.0 starting
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3338): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+I/mediaserver( 3339): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3339): Using default 3000 mSec as standby time.
+I/ServiceManager( 3339): Waiting for service batterystats...
+D/AndroidRuntime( 3340): 
+D/AndroidRuntime( 3340): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3340): CheckJNI is OFF
+I/art     ( 3340): option[0]=-Xzygote
+I/art     ( 3340): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3340): option[2]=exit
+I/art     ( 3340): option[3]=vfprintf
+I/art     ( 3340): option[4]=sensitiveThread
+I/art     ( 3340): option[5]=-verbose:gc
+I/art     ( 3340): option[6]=-Xms8m
+I/art     ( 3340): option[7]=-Xmx256m
+I/art     ( 3340): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3340): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3340): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3340): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3340): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3340): option[13]=-Xgenregmap
+I/art     ( 3340): option[14]=-Xgc:precise
+I/art     ( 3340): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3340): option[16]=-Xlockprofthreshold:500
+I/art     ( 3340): option[17]=-Ximage-compiler-option
+I/art     ( 3340): option[18]=--runtime-arg
+I/art     ( 3340): option[19]=-Ximage-compiler-option
+I/art     ( 3340): option[20]=-Xms64m
+I/art     ( 3340): option[21]=-Ximage-compiler-option
+I/art     ( 3340): option[22]=--runtime-arg
+I/art     ( 3340): option[23]=-Ximage-compiler-option
+I/art     ( 3340): option[24]=-Xmx64m
+I/art     ( 3340): option[25]=-Ximage-compiler-option
+I/art     ( 3340): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3340): option[27]=-Ximage-compiler-option
+I/art     ( 3340): option[28]=--image-classes=preloaded-classes
+I/art     ( 3340): option[29]=-Xcompiler-option
+I/art     ( 3340): option[30]=--runtime-arg
+I/art     ( 3340): option[31]=-Xcompiler-option
+I/art     ( 3340): option[32]=-Xms64m
+I/art     ( 3340): option[33]=-Xcompiler-option
+I/art     ( 3340): option[34]=--runtime-arg
+I/art     ( 3340): option[35]=-Xcompiler-option
+I/art     ( 3340): option[36]=-Xmx512m
+I/art     ( 3340): option[37]=-Duser.language=zh
+I/art     ( 3340): option[38]=-Duser.region=CN
+E/cutils-trace( 3340): Error opening trace file: No such file or directory (2)
+E/sdcard  ( 1916): missing packages.list; retrying
+F/libc    ( 3340): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c420c0 in tid 3340 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3340, tid: 3340, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c420c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c89ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c8e508  r5 41c8ef58  r6 00000071  r7 41c88769
+I/DEBUG   ( 1901):     r8 41c8e508  r9 402d92d0  sl beb6f790  fp beb6f860
+I/DEBUG   ( 1901):     ip 00000000  sp beb6f718  lr 41c420b3  pc 41c420c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_06
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3406): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3406): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 3406 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3406, tid: 3406, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be81d1e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_07
+I/Netd    ( 3408): Netd 1.0 starting
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3408): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3410): 
+D/AndroidRuntime( 3410): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3410): CheckJNI is OFF
+I/art     ( 3410): option[0]=-Xzygote
+I/art     ( 3410): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3410): option[2]=exit
+I/art     ( 3410): option[3]=vfprintf
+I/art     ( 3410): option[4]=sensitiveThread
+I/art     ( 3410): option[5]=-verbose:gc
+I/art     ( 3410): option[6]=-Xms8m
+I/art     ( 3410): option[7]=-Xmx256m
+I/art     ( 3410): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3410): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3410): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3410): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3410): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3410): option[13]=-Xgenregmap
+I/art     ( 3410): option[14]=-Xgc:precise
+I/art     ( 3410): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3410): option[16]=-Xlockprofthreshold:500
+I/art     ( 3410): option[17]=-Ximage-compiler-option
+I/art     ( 3410): option[18]=--runtime-arg
+I/art     ( 3410): option[19]=-Ximage-compiler-option
+I/art     ( 3410): option[20]=-Xms64m
+I/art     ( 3410): option[21]=-Ximage-compiler-option
+I/art     ( 3410): option[22]=--runtime-arg
+I/art     ( 3410): option[23]=-Ximage-compiler-option
+I/art     ( 3410): option[24]=-Xmx64m
+I/art     ( 3410): option[25]=-Ximage-compiler-option
+I/art     ( 3410): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3410): option[27]=-Ximage-compiler-option
+I/art     ( 3410): option[28]=--image-classes=preloaded-classes
+I/art     ( 3410): option[29]=-Xcompiler-option
+I/art     ( 3410): option[30]=--runtime-arg
+I/art     ( 3410): option[31]=-Xcompiler-option
+I/art     ( 3410): option[32]=-Xms64m
+I/art     ( 3410): option[33]=-Xcompiler-option
+I/art     ( 3410): option[34]=--runtime-arg
+I/art     ( 3410): option[35]=-Xcompiler-option
+I/art     ( 3410): option[36]=-Xmx512m
+I/art     ( 3410): option[37]=-Duser.language=zh
+I/art     ( 3410): option[38]=-Duser.region=CN
+E/cutils-trace( 3410): Error opening trace file: No such file or directory (2)
+F/libc    ( 3410): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c540c0 in tid 3410 (main)
+I/mediaserver( 3409): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3409): Using default 3000 mSec as standby time.
+I/ServiceManager( 3409): Waiting for service batterystats...
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3410, tid: 3410, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c540c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c9bee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ca0508  r5 41ca0f58  r6 00000071  r7 41c9a769
+I/DEBUG   ( 1901):     r8 41ca0508  r9 402c12d0  sl bed32790  fp bed32860
+I/DEBUG   ( 1901):     ip 00000000  sp bed32718  lr 41c540b3  pc 41c540c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_09
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3457): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3457): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 3457 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3457, tid: 3457, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beb651e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_01
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3459): Netd 1.0 starting
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3459): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3461): 
+D/AndroidRuntime( 3461): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3461): CheckJNI is OFF
+I/art     ( 3461): option[0]=-Xzygote
+I/art     ( 3461): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3461): option[2]=exit
+I/art     ( 3461): option[3]=vfprintf
+I/art     ( 3461): option[4]=sensitiveThread
+I/art     ( 3461): option[5]=-verbose:gc
+I/art     ( 3461): option[6]=-Xms8m
+I/art     ( 3461): option[7]=-Xmx256m
+I/art     ( 3461): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3461): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3461): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3461): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3461): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3461): option[13]=-Xgenregmap
+I/art     ( 3461): option[14]=-Xgc:precise
+I/art     ( 3461): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3461): option[16]=-Xlockprofthreshold:500
+I/art     ( 3461): option[17]=-Ximage-compiler-option
+I/art     ( 3461): option[18]=--runtime-arg
+I/art     ( 3461): option[19]=-Ximage-compiler-option
+I/art     ( 3461): option[20]=-Xms64m
+I/art     ( 3461): option[21]=-Ximage-compiler-option
+I/art     ( 3461): option[22]=--runtime-arg
+I/art     ( 3461): option[23]=-Ximage-compiler-option
+I/art     ( 3461): option[24]=-Xmx64m
+I/art     ( 3461): option[25]=-Ximage-compiler-option
+I/art     ( 3461): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3461): option[27]=-Ximage-compiler-option
+I/art     ( 3461): option[28]=--image-classes=preloaded-classes
+I/art     ( 3461): option[29]=-Xcompiler-option
+I/art     ( 3461): option[30]=--runtime-arg
+I/art     ( 3461): option[31]=-Xcompiler-option
+I/art     ( 3461): option[32]=-Xms64m
+I/art     ( 3461): option[33]=-Xcompiler-option
+I/art     ( 3461): option[34]=--runtime-arg
+I/art     ( 3461): option[35]=-Xcompiler-option
+I/art     ( 3461): option[36]=-Xmx512m
+I/art     ( 3461): option[37]=-Duser.language=zh
+I/art     ( 3461): option[38]=-Duser.region=CN
+I/mediaserver( 3460): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3460): Using default 3000 mSec as standby time.
+I/ServiceManager( 3460): Waiting for service batterystats...
+E/cutils-trace( 3461): Error opening trace file: No such file or directory (2)
+F/libc    ( 3461): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c420c0 in tid 3461 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3461, tid: 3461, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c420c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c89ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c8e508  r5 41c8ef58  r6 00000071  r7 41c88769
+I/DEBUG   ( 1901):     r8 41c8e508  r9 402512d0  sl becd0790  fp becd0860
+I/DEBUG   ( 1901):     ip 00000000  sp becd0718  lr 41c420b3  pc 41c420c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3559): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3559): Fatal signal 4 (SIGILL), code 1, fault addr 0x4029b0c0 in tid 3559 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3559, tid: 3559, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x4029b0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402e2ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402e7508  r5 402e7f58  r6 00000071  r7 402e1769
+I/DEBUG   ( 1901):     r8 402e7508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beac51e8  lr 4029b0b3  pc 4029b0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+I/Netd    ( 3561): Netd 1.0 starting
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3561): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3563): 
+D/AndroidRuntime( 3563): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3563): CheckJNI is OFF
+I/art     ( 3563): option[0]=-Xzygote
+I/art     ( 3563): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3563): option[2]=exit
+I/art     ( 3563): option[3]=vfprintf
+I/art     ( 3563): option[4]=sensitiveThread
+I/art     ( 3563): option[5]=-verbose:gc
+I/art     ( 3563): option[6]=-Xms8m
+I/art     ( 3563): option[7]=-Xmx256m
+I/art     ( 3563): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3563): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3563): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3563): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3563): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3563): option[13]=-Xgenregmap
+I/art     ( 3563): option[14]=-Xgc:precise
+I/art     ( 3563): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3563): option[16]=-Xlockprofthreshold:500
+I/art     ( 3563): option[17]=-Ximage-compiler-option
+I/art     ( 3563): option[18]=--runtime-arg
+I/art     ( 3563): option[19]=-Ximage-compiler-option
+I/art     ( 3563): option[20]=-Xms64m
+I/art     ( 3563): option[21]=-Ximage-compiler-option
+I/art     ( 3563): option[22]=--runtime-arg
+I/art     ( 3563): option[23]=-Ximage-compiler-option
+I/art     ( 3563): option[24]=-Xmx64m
+I/art     ( 3563): option[25]=-Ximage-compiler-option
+I/art     ( 3563): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3563): option[27]=-Ximage-compiler-option
+I/art     ( 3563): option[28]=--image-classes=preloaded-classes
+I/art     ( 3563): option[29]=-Xcompiler-option
+I/art     ( 3563): option[30]=--runtime-arg
+I/art     ( 3563): option[31]=-Xcompiler-option
+I/art     ( 3563): option[32]=-Xms64m
+I/art     ( 3563): option[33]=-Xcompiler-option
+I/art     ( 3563): option[34]=--runtime-arg
+I/art     ( 3563): option[35]=-Xcompiler-option
+I/art     ( 3563): option[36]=-Xmx512m
+I/art     ( 3563): option[37]=-Duser.language=zh
+I/art     ( 3563): option[38]=-Duser.region=CN
+I/mediaserver( 3562): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3562): Using default 3000 mSec as standby time.
+I/ServiceManager( 3562): Waiting for service batterystats...
+E/cutils-trace( 3563): Error opening trace file: No such file or directory (2)
+F/libc    ( 3563): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c830c0 in tid 3563 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3563, tid: 3563, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c830c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ccaee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ccf508  r5 41ccff58  r6 00000071  r7 41cc9769
+I/DEBUG   ( 1901):     r8 41ccf508  r9 403222d0  sl bed9a790  fp bed9a860
+I/DEBUG   ( 1901):     ip 00000000  sp bed9a718  lr 41c830b3  pc 41c830c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+W/linker  ( 3661): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3661): Fatal signal 4 (SIGILL), code 1, fault addr 0x4027a0c0 in tid 3661 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3661, tid: 3661, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x4027a0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402c1ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402c6508  r5 402c6f58  r6 00000071  r7 402c0769
+I/DEBUG   ( 1901):     r8 402c6508  r9 4068790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp bec671e8  lr 4027a0b3  pc 4027a0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+I/Netd    ( 3665): Netd 1.0 starting
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3665): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+D/AndroidRuntime( 3667): 
+D/AndroidRuntime( 3667): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3667): CheckJNI is OFF
+I/art     ( 3667): option[0]=-Xzygote
+I/art     ( 3667): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3667): option[2]=exit
+I/art     ( 3667): option[3]=vfprintf
+I/art     ( 3667): option[4]=sensitiveThread
+I/art     ( 3667): option[5]=-verbose:gc
+I/art     ( 3667): option[6]=-Xms8m
+I/art     ( 3667): option[7]=-Xmx256m
+I/art     ( 3667): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3667): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3667): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3667): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3667): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3667): option[13]=-Xgenregmap
+I/art     ( 3667): option[14]=-Xgc:precise
+I/art     ( 3667): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3667): option[16]=-Xlockprofthreshold:500
+I/art     ( 3667): option[17]=-Ximage-compiler-option
+I/art     ( 3667): option[18]=--runtime-arg
+I/art     ( 3667): option[19]=-Ximage-compiler-option
+I/art     ( 3667): option[20]=-Xms64m
+I/art     ( 3667): option[21]=-Ximage-compiler-option
+I/art     ( 3667): option[22]=--runtime-arg
+I/art     ( 3667): option[23]=-Ximage-compiler-option
+I/art     ( 3667): option[24]=-Xmx64m
+I/art     ( 3667): option[25]=-Ximage-compiler-option
+I/art     ( 3667): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3667): option[27]=-Ximage-compiler-option
+I/art     ( 3667): option[28]=--image-classes=preloaded-classes
+I/art     ( 3667): option[29]=-Xcompiler-option
+I/art     ( 3667): option[30]=--runtime-arg
+I/art     ( 3667): option[31]=-Xcompiler-option
+I/art     ( 3667): option[32]=-Xms64m
+I/art     ( 3667): option[33]=-Xcompiler-option
+I/art     ( 3667): option[34]=--runtime-arg
+I/art     ( 3667): option[35]=-Xcompiler-option
+I/art     ( 3667): option[36]=-Xmx512m
+I/art     ( 3667): option[37]=-Duser.language=zh
+I/art     ( 3667): option[38]=-Duser.region=CN
+I/mediaserver( 3666): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3666): Using default 3000 mSec as standby time.
+I/ServiceManager( 3666): Waiting for service batterystats...
+E/cutils-trace( 3667): Error opening trace file: No such file or directory (2)
+F/libc    ( 3667): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c3e0c0 in tid 3667 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3667, tid: 3667, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c3e0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c85ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c8a508  r5 41c8af58  r6 00000071  r7 41c84769
+I/DEBUG   ( 1901):     r8 41c8a508  r9 402942d0  sl bef53790  fp bef53860
+I/DEBUG   ( 1901):     ip 00000000  sp bef53718  lr 41c3e0b3  pc 41c3e0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3752): Netd 1.0 starting
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3752): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+W/linker  ( 3749): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3749): Fatal signal 4 (SIGILL), code 1, fault addr 0x402960c0 in tid 3749 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3749, tid: 3749, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402960c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402ddee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402e2508  r5 402e2f58  r6 00000071  r7 402dc769
+I/DEBUG   ( 1901):     r8 402e2508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be9ff1e8  lr 402960b3  pc 402960c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+D/AndroidRuntime( 3751): 
+D/AndroidRuntime( 3751): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3751): CheckJNI is OFF
+I/art     ( 3751): option[0]=-Xzygote
+I/art     ( 3751): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3751): option[2]=exit
+I/art     ( 3751): option[3]=vfprintf
+I/art     ( 3751): option[4]=sensitiveThread
+I/art     ( 3751): option[5]=-verbose:gc
+I/art     ( 3751): option[6]=-Xms8m
+I/art     ( 3751): option[7]=-Xmx256m
+I/art     ( 3751): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3751): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3751): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3751): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3751): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3751): option[13]=-Xgenregmap
+I/art     ( 3751): option[14]=-Xgc:precise
+I/art     ( 3751): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3751): option[16]=-Xlockprofthreshold:500
+I/art     ( 3751): option[17]=-Ximage-compiler-option
+I/art     ( 3751): option[18]=--runtime-arg
+I/art     ( 3751): option[19]=-Ximage-compiler-option
+I/art     ( 3751): option[20]=-Xms64m
+I/art     ( 3751): option[21]=-Ximage-compiler-option
+I/art     ( 3751): option[22]=--runtime-arg
+I/art     ( 3751): option[23]=-Ximage-compiler-option
+I/art     ( 3751): option[24]=-Xmx64m
+I/art     ( 3751): option[25]=-Ximage-compiler-option
+I/art     ( 3751): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3751): option[27]=-Ximage-compiler-option
+I/art     ( 3751): option[28]=--image-classes=preloaded-classes
+I/art     ( 3751): option[29]=-Xcompiler-option
+I/art     ( 3751): option[30]=--runtime-arg
+I/art     ( 3751): option[31]=-Xcompiler-option
+I/art     ( 3751): option[32]=-Xms64m
+I/art     ( 3751): option[33]=-Xcompiler-option
+I/art     ( 3751): option[34]=--runtime-arg
+I/art     ( 3751): option[35]=-Xcompiler-option
+I/art     ( 3751): option[36]=-Xmx512m
+I/art     ( 3751): option[37]=-Duser.language=zh
+I/art     ( 3751): option[38]=-Duser.region=CN
+I/mediaserver( 3750): ServiceManager: 0x40f500c0
+E/sdcard  ( 1916): missing packages.list; retrying
+I/AudioFlinger( 3750): Using default 3000 mSec as standby time.
+I/ServiceManager( 3750): Waiting for service batterystats...
+E/cutils-trace( 3751): Error opening trace file: No such file or directory (2)
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_00
+F/libc    ( 3751): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c350c0 in tid 3751 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3751, tid: 3751, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c350c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c7cee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c81508  r5 41c81f58  r6 00000071  r7 41c7b769
+I/DEBUG   ( 1901):     r8 41c81508  r9 403382d0  sl bef92790  fp bef92860
+I/DEBUG   ( 1901):     ip 00000000  sp bef92718  lr 41c350b3  pc 41c350c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_06
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3831): Netd 1.0 starting
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3831): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+W/linker  ( 3832): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3832): Fatal signal 4 (SIGILL), code 1, fault addr 0x402860c0 in tid 3832 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3832, tid: 3832, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x402860c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402cdee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402d2508  r5 402d2f58  r6 00000071  r7 402cc769
+I/DEBUG   ( 1901):     r8 402d2508  r9 4068790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp be8f61e8  lr 402860b3  pc 402860c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_07
+D/AndroidRuntime( 3834): 
+D/AndroidRuntime( 3834): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3834): CheckJNI is OFF
+I/art     ( 3834): option[0]=-Xzygote
+I/art     ( 3834): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3834): option[2]=exit
+I/art     ( 3834): option[3]=vfprintf
+I/art     ( 3834): option[4]=sensitiveThread
+I/art     ( 3834): option[5]=-verbose:gc
+I/art     ( 3834): option[6]=-Xms8m
+I/art     ( 3834): option[7]=-Xmx256m
+I/art     ( 3834): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3834): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3834): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3834): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3834): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3834): option[13]=-Xgenregmap
+I/art     ( 3834): option[14]=-Xgc:precise
+I/art     ( 3834): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3834): option[16]=-Xlockprofthreshold:500
+I/art     ( 3834): option[17]=-Ximage-compiler-option
+I/art     ( 3834): option[18]=--runtime-arg
+I/art     ( 3834): option[19]=-Ximage-compiler-option
+I/art     ( 3834): option[20]=-Xms64m
+I/art     ( 3834): option[21]=-Ximage-compiler-option
+I/art     ( 3834): option[22]=--runtime-arg
+I/art     ( 3834): option[23]=-Ximage-compiler-option
+I/art     ( 3834): option[24]=-Xmx64m
+I/art     ( 3834): option[25]=-Ximage-compiler-option
+I/art     ( 3834): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3834): option[27]=-Ximage-compiler-option
+I/art     ( 3834): option[28]=--image-classes=preloaded-classes
+I/art     ( 3834): option[29]=-Xcompiler-option
+I/art     ( 3834): option[30]=--runtime-arg
+I/art     ( 3834): option[31]=-Xcompiler-option
+I/art     ( 3834): option[32]=-Xms64m
+I/art     ( 3834): option[33]=-Xcompiler-option
+I/art     ( 3834): option[34]=--runtime-arg
+I/art     ( 3834): option[35]=-Xcompiler-option
+I/art     ( 3834): option[36]=-Xmx512m
+I/art     ( 3834): option[37]=-Duser.language=zh
+I/art     ( 3834): option[38]=-Duser.region=CN
+I/mediaserver( 3833): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3833): Using default 3000 mSec as standby time.
+I/ServiceManager( 3833): Waiting for service batterystats...
+E/cutils-trace( 3834): Error opening trace file: No such file or directory (2)
+F/libc    ( 3834): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c620c0 in tid 3834 (main)
+E/sdcard  ( 1916): missing packages.list; retrying
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3834, tid: 3834, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c620c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca9ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cae508  r5 41caef58  r6 00000071  r7 41ca8769
+I/DEBUG   ( 1901):     r8 41cae508  r9 402092d0  sl bef70790  fp bef70860
+I/DEBUG   ( 1901):     ip 00000000  sp bef70718  lr 41c620b3  pc 41c620c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_09
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 3929): Netd 1.0 starting
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 3929): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+W/linker  ( 3930): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 3930): Fatal signal 4 (SIGILL), code 1, fault addr 0x406130c0 in tid 3930 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3930, tid: 3930, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x406130c0
+I/DEBUG   ( 1901):     r0 00000017  r1 4065aee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 4065f508  r5 4065ff58  r6 00000071  r7 40659769
+I/DEBUG   ( 1901):     r8 4065f508  r9 4039890a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beee11e8  lr 406130b3  pc 406130c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_01
+D/AndroidRuntime( 3932): 
+D/AndroidRuntime( 3932): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 3932): CheckJNI is OFF
+I/art     ( 3932): option[0]=-Xzygote
+I/art     ( 3932): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 3932): option[2]=exit
+I/art     ( 3932): option[3]=vfprintf
+I/art     ( 3932): option[4]=sensitiveThread
+I/art     ( 3932): option[5]=-verbose:gc
+I/art     ( 3932): option[6]=-Xms8m
+I/art     ( 3932): option[7]=-Xmx256m
+I/art     ( 3932): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 3932): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 3932): option[10]=-XX:HeapMinFree=2m
+I/art     ( 3932): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 3932): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 3932): option[13]=-Xgenregmap
+I/art     ( 3932): option[14]=-Xgc:precise
+I/art     ( 3932): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 3932): option[16]=-Xlockprofthreshold:500
+I/art     ( 3932): option[17]=-Ximage-compiler-option
+I/art     ( 3932): option[18]=--runtime-arg
+I/art     ( 3932): option[19]=-Ximage-compiler-option
+I/art     ( 3932): option[20]=-Xms64m
+I/art     ( 3932): option[21]=-Ximage-compiler-option
+I/art     ( 3932): option[22]=--runtime-arg
+I/art     ( 3932): option[23]=-Ximage-compiler-option
+I/art     ( 3932): option[24]=-Xmx64m
+I/art     ( 3932): option[25]=-Ximage-compiler-option
+I/art     ( 3932): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 3932): option[27]=-Ximage-compiler-option
+I/art     ( 3932): option[28]=--image-classes=preloaded-classes
+I/art     ( 3932): option[29]=-Xcompiler-option
+I/art     ( 3932): option[30]=--runtime-arg
+I/art     ( 3932): option[31]=-Xcompiler-option
+I/art     ( 3932): option[32]=-Xms64m
+I/art     ( 3932): option[33]=-Xcompiler-option
+I/art     ( 3932): option[34]=--runtime-arg
+I/art     ( 3932): option[35]=-Xcompiler-option
+I/art     ( 3932): option[36]=-Xmx512m
+I/art     ( 3932): option[37]=-Duser.language=zh
+I/art     ( 3932): option[38]=-Duser.region=CN
+I/mediaserver( 3931): ServiceManager: 0x40e500c0
+I/AudioFlinger( 3931): Using default 3000 mSec as standby time.
+I/ServiceManager( 3931): Waiting for service batterystats...
+E/cutils-trace( 3932): Error opening trace file: No such file or directory (2)
+F/libc    ( 3932): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c5d0c0 in tid 3932 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 3932, tid: 3932, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c5d0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41ca4ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41ca9508  r5 41ca9f58  r6 00000071  r7 41ca3769
+I/DEBUG   ( 1901):     r8 41ca9508  r9 4030c2d0  sl befe3790  fp befe3860
+I/DEBUG   ( 1901):     ip 00000000  sp befe3718  lr 41c5d0b3  pc 41c5d0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_02
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 4029): Netd 1.0 starting
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4029): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+W/linker  ( 4030): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 4030): Fatal signal 4 (SIGILL), code 1, fault addr 0x4029f0c0 in tid 4030 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 4030, tid: 4030, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x4029f0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 402e6ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 402eb508  r5 402ebf58  r6 00000071  r7 402e5769
+I/DEBUG   ( 1901):     r8 402eb508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beebf1e8  lr 4029f0b3  pc 4029f0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+D/AndroidRuntime( 4032): 
+D/AndroidRuntime( 4032): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 4032): CheckJNI is OFF
+I/art     ( 4032): option[0]=-Xzygote
+I/art     ( 4032): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 4032): option[2]=exit
+I/art     ( 4032): option[3]=vfprintf
+I/art     ( 4032): option[4]=sensitiveThread
+I/art     ( 4032): option[5]=-verbose:gc
+I/art     ( 4032): option[6]=-Xms8m
+I/art     ( 4032): option[7]=-Xmx256m
+I/art     ( 4032): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 4032): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 4032): option[10]=-XX:HeapMinFree=2m
+I/art     ( 4032): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 4032): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 4032): option[13]=-Xgenregmap
+I/art     ( 4032): option[14]=-Xgc:precise
+I/art     ( 4032): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/mediaserver( 4031): ServiceManager: 0x40e500c0
+I/AudioFlinger( 4031): Using default 3000 mSec as standby time.
+I/art     ( 4032): option[16]=-Xlockprofthreshold:500
+I/art     ( 4032): option[17]=-Ximage-compiler-option
+I/art     ( 4032): option[18]=--runtime-arg
+I/ServiceManager( 4031): Waiting for service batterystats...
+I/art     ( 4032): option[19]=-Ximage-compiler-option
+I/art     ( 4032): option[20]=-Xms64m
+I/art     ( 4032): option[21]=-Ximage-compiler-option
+I/art     ( 4032): option[22]=--runtime-arg
+I/art     ( 4032): option[23]=-Ximage-compiler-option
+I/art     ( 4032): option[24]=-Xmx64m
+I/art     ( 4032): option[25]=-Ximage-compiler-option
+I/art     ( 4032): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 4032): option[27]=-Ximage-compiler-option
+I/art     ( 4032): option[28]=--image-classes=preloaded-classes
+I/art     ( 4032): option[29]=-Xcompiler-option
+I/art     ( 4032): option[30]=--runtime-arg
+I/art     ( 4032): option[31]=-Xcompiler-option
+I/art     ( 4032): option[32]=-Xms64m
+I/art     ( 4032): option[33]=-Xcompiler-option
+I/art     ( 4032): option[34]=--runtime-arg
+I/art     ( 4032): option[35]=-Xcompiler-option
+I/art     ( 4032): option[36]=-Xmx512m
+I/art     ( 4032): option[37]=-Duser.language=zh
+I/art     ( 4032): option[38]=-Duser.region=CN
+E/cutils-trace( 4032): Error opening trace file: No such file or directory (2)
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_03
+F/libc    ( 4032): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c4f0c0 in tid 4032 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 4032, tid: 4032, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c4f0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41c96ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41c9b508  r5 41c9bf58  r6 00000071  r7 41c95769
+I/DEBUG   ( 1901):     r8 41c9b508  r9 402742d0  sl bee86790  fp bee86860
+I/DEBUG   ( 1901):     ip 00000000  sp bee86718  lr 41c4f0b3  pc 41c4f0c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_08
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+I/Netd    ( 4128): Netd 1.0 starting
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/rmnet0/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/rmnet1/accept_ra_rt_table: No such file or directory
+E/Netd    ( 4128): Failed to open /proc/sys/net/ipv6/conf/rmnet2/accept_ra_rt_table: No such file or directory
+W/linker  ( 4129): libsec-ril.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+F/libc    ( 4129): Fatal signal 4 (SIGILL), code 1, fault addr 0x405fd0c0 in tid 4129 (rild)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 4129, tid: 4129, name: rild  >>> /system/bin/rild <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x405fd0c0
+I/DEBUG   ( 1901):     r0 00000017  r1 40644ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 40649508  r5 40649f58  r6 00000071  r7 40643769
+I/DEBUG   ( 1901):     r8 40649508  r9 4058790a  sl 00000000  fp 00000003
+I/DEBUG   ( 1901):     ip 00000000  sp beb411e8  lr 405fd0b3  pc 405fd0c0  cpsr 200e0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0004e88b  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #03 pc 0004e013  /system/lib/libsec-ril.so (loadOpnameDb+34)
+I/DEBUG   ( 1901):     #04 pc 000247f7  /system/lib/libsec-ril.so (RIL_Init+54)
+I/DEBUG   ( 1901):     #05 pc 00000f4b  /system/bin/rild
+I/DEBUG   ( 1901):     #06 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #07 pc 000010d8  /system/bin/rild
+D/AndroidRuntime( 4131): 
+D/AndroidRuntime( 4131): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime( 4131): CheckJNI is OFF
+I/art     ( 4131): option[0]=-Xzygote
+I/art     ( 4131): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 4131): option[2]=exit
+I/art     ( 4131): option[3]=vfprintf
+I/art     ( 4131): option[4]=sensitiveThread
+I/art     ( 4131): option[5]=-verbose:gc
+I/art     ( 4131): option[6]=-Xms8m
+I/art     ( 4131): option[7]=-Xmx256m
+I/art     ( 4131): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 4131): option[9]=-XX:HeapGrowthLimit=96m
+I/art     ( 4131): option[10]=-XX:HeapMinFree=2m
+I/art     ( 4131): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 4131): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 4131): option[13]=-Xgenregmap
+I/art     ( 4131): option[14]=-Xgc:precise
+I/art     ( 4131): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 4131): option[16]=-Xlockprofthreshold:500
+I/art     ( 4131): option[17]=-Ximage-compiler-option
+I/art     ( 4131): option[18]=--runtime-arg
+I/art     ( 4131): option[19]=-Ximage-compiler-option
+I/art     ( 4131): option[20]=-Xms64m
+I/art     ( 4131): option[21]=-Ximage-compiler-option
+I/art     ( 4131): option[22]=--runtime-arg
+I/art     ( 4131): option[23]=-Ximage-compiler-option
+I/art     ( 4131): option[24]=-Xmx64m
+I/art     ( 4131): option[25]=-Ximage-compiler-option
+I/art     ( 4131): option[26]=--image-classes-zip=/system/framework/framework.jar
+I/art     ( 4131): option[27]=-Ximage-compiler-option
+I/art     ( 4131): option[28]=--image-classes=preloaded-classes
+I/art     ( 4131): option[29]=-Xcompiler-option
+I/art     ( 4131): option[30]=--runtime-arg
+I/art     ( 4131): option[31]=-Xcompiler-option
+I/art     ( 4131): option[32]=-Xms64m
+I/art     ( 4131): option[33]=-Xcompiler-option
+I/art     ( 4131): option[34]=--runtime-arg
+I/art     ( 4131): option[35]=-Xcompiler-option
+I/art     ( 4131): option[36]=-Xmx512m
+I/art     ( 4131): option[37]=-Duser.language=zh
+I/art     ( 4131): option[38]=-Duser.region=CN
+I/mediaserver( 4130): ServiceManager: 0x40e500c0
+I/AudioFlinger( 4130): Using default 3000 mSec as standby time.
+I/ServiceManager( 4130): Waiting for service batterystats...
+E/cutils-trace( 4131): Error opening trace file: No such file or directory (2)
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_04
+F/libc    ( 4131): Fatal signal 4 (SIGILL), code 1, fault addr 0x41c820c0 in tid 4131 (main)
+I/DEBUG   ( 1901): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1901): Build fingerprint: 'samsung/i9308xx/i9308:5.0.2/LRX22G/builder.20150703085101_R:userdebug/test-keys'
+I/DEBUG   ( 1901): Revision: '12'
+I/DEBUG   ( 1901): ABI: 'arm'
+I/DEBUG   ( 1901): pid: 4131, tid: 4131, name: main  >>> zygote <<<
+I/DEBUG   ( 1901): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x41c820c0
+I/DEBUG   ( 1901):     r0 00000017  r1 41cc9ee3  r2 0000006c  r3 00000005
+I/DEBUG   ( 1901):     r4 41cce508  r5 41ccef58  r6 00000071  r7 41cc8769
+I/DEBUG   ( 1901):     r8 41cce508  r9 403932d0  sl bee3f790  fp bee3f860
+I/DEBUG   ( 1901):     ip 00000000  sp bee3f718  lr 41c820b3  pc 41c820c0  cpsr 200d0030
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): backtrace:
+I/DEBUG   ( 1901):     #00 pc 000130c0  /system/lib/libsqlite.so
+I/DEBUG   ( 1901):     #01 pc 000141a1  /system/lib/libsqlite.so (sqlite3_initialize+476)
+I/DEBUG   ( 1901):     #02 pc 0002ce35  /system/lib/libsqlite.so (sqlite3_soft_heap_limit64+8)
+I/DEBUG   ( 1901):     #03 pc 000703a3  /system/lib/libandroid_runtime.so (android::register_android_database_SQLiteGlobal(_JNIEnv*)+34)
+I/DEBUG   ( 1901):     #04 pc 0005a111  /system/lib/libandroid_runtime.so
+I/DEBUG   ( 1901):     #05 pc 0005b161  /system/lib/libandroid_runtime.so (android::AndroidRuntime::startReg(_JNIEnv*)+28)
+I/DEBUG   ( 1901):     #06 pc 0005b29d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&)+276)
+I/DEBUG   ( 1901):     #07 pc 00001655  /system/bin/app_process32
+I/DEBUG   ( 1901):     #08 pc 0000fb61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   ( 1901):     #09 pc 00001770  /system/bin/app_process32
+I/DEBUG   ( 1901): 
+I/DEBUG   ( 1901): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager( 1894): service 'media.audio_flinger' died
+E/sdcard  ( 1916): missing packages.list; retrying
+E/sdcard  ( 1916): missing packages.list; retrying
